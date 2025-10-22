@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Attendance Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>📘 Attendance Tracker</header>
+
+  <div class="container">
+    <div class="top-bar">
+      <div class="month-selector">
+        <label>Month:
+          <select id="monthSelect"></select>
+        </label>
+        <label>Year:
+          <select id="yearSelect"></select>
+        </label>
+      </div>
+      <div class="semester-controls">
+        <button id="prevSemesterBtn">Previous Semester</button>
+        <select id="semesterSelect"></select>
+        <button id="nextSemesterBtn">Add Semester</button>
+      </div>
+    </div>
+
+    <div class="main-layout">
+      <div class="calendar-section">
+        <div class="day-names">
+          <div class="day-name">Sun</div>
+          <div class="day-name">Mon</div>
+          <div class="day-name">Tue</div>
+          <div class="day-name">Wed</div>
+          <div class="day-name">Thu</div>
+          <div class="day-name">Fri</div>
+          <div class="day-name">Sat</div>
+        </div>
+        <div class="calendar" id="calendar"></div>
+      </div>
+
+      <div class="summary-section">
+        <h3>📊 Attendance Summary</h3>
+        <div id="overall">Overall Attendance: 0%</div>
+        <div id="subjectSummary"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Popup -->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <h3 id="popupDate">Date</h3>
+      <div class="lists">
+        <div class="list-box">
+          <h4>Classes Held</h4>
+          <div id="classesHeld"></div>
+        </div>
+        <div class="list-box">
+          <h4>Classes Attended</h4>
+          <div id="classesAttended"></div>
+        </div>
+      </div>
+      <div class="popup-buttons">
+        <button id="saveBtn">Save</button>
+        <button id="closeBtn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

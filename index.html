@@ -8,68 +8,62 @@
     body {
       margin: 0;
       padding: 0;
-      font-family: "Poppins", sans-serif;
-      background: linear-gradient(135deg, #1e1e2f, #252547, #1b1b2f);
-      color: white;
-      overflow-x: hidden;
+      font-family: "Poppins", "Segoe UI", sans-serif;
+      background-color: #ffffff;
+      color: #202124;
     }
 
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 20px 40px;
-      background: rgba(0, 0, 0, 0.4);
-      backdrop-filter: blur(10px);
+      padding: 16px 40px;
+      background-color: #f8f9fa;
+      border-bottom: 1px solid #e0e0e0;
       position: sticky;
       top: 0;
       z-index: 10;
     }
 
     header h1 {
-      font-size: 1.8rem;
-      color: #00ffcc;
+      font-size: 1.6rem;
+      color: #1a73e8;
       font-weight: 600;
-      letter-spacing: 1px;
+      margin: 0;
     }
 
     header a {
       text-decoration: none;
-      background: #00ffcc;
-      color: #121212;
-      padding: 10px 20px;
+      background: #1a73e8;
+      color: #ffffff;
+      padding: 10px 22px;
       border-radius: 25px;
-      font-weight: 600;
-      transition: all 0.3s ease;
+      font-weight: 500;
+      transition: all 0.2s ease;
     }
 
     header a:hover {
-      background: #00bfa5;
-      transform: scale(1.05);
+      background: #155fc1;
     }
 
     .hero {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
       text-align: center;
-      min-height: 90vh;
-      padding: 30px;
+      padding: 60px 20px 30px;
     }
 
     .hero h2 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-      color: #00ffcc;
-      text-shadow: 0 0 20px #00ffcc80;
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+      color: #1a73e8;
+      font-weight: 600;
     }
 
     .hero p {
-      font-size: 1.2rem;
-      line-height: 1.6;
+      font-size: 1.1rem;
+      color: #5f6368;
       max-width: 700px;
-      color: #ccc;
+      margin: 0 auto;
+      line-height: 1.6;
     }
 
     .images {
@@ -83,75 +77,88 @@
     .images img {
       width: 260px;
       height: 180px;
-      border-radius: 20px;
+      border-radius: 12px;
       object-fit: cover;
-      box-shadow: 0 0 20px rgba(0, 255, 204, 0.4);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid #e0e0e0;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
     .images img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 30px rgba(0, 255, 204, 0.7);
+      transform: scale(1.03);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
     .features {
-      background: rgba(255, 255, 255, 0.05);
-      margin-top: 60px;
-      padding: 40px 20px;
-      border-radius: 20px;
+      background: #f8f9fa;
+      margin: 60px auto;
+      padding: 40px 25px;
+      border-radius: 12px;
       width: 85%;
       max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
       text-align: center;
+      border: 1px solid #e0e0e0;
     }
 
     .features h3 {
-      color: #00ffcc;
-      font-size: 2rem;
+      color: #1a73e8;
+      font-size: 1.8rem;
       margin-bottom: 20px;
     }
 
     .features ul {
       list-style: none;
       padding: 0;
+      color: #3c4043;
       line-height: 1.8;
-      color: #ddd;
+      margin: 0;
     }
 
     .features li {
-      font-size: 1.1rem;
-      margin: 10px 0;
+      font-size: 1.05rem;
+      margin: 8px 0;
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      color: #999;
-      font-size: 0.9rem;
-      margin-top: 50px;
+      color: #5f6368;
+      font-size: 0.95rem;
+      border-top: 1px solid #e0e0e0;
+      background-color: #f8f9fa;
     }
 
     @media (max-width: 768px) {
-      .hero h2 { font-size: 2.3rem; }
-      .hero p { font-size: 1rem; }
-      .images img { width: 90%; height: 160px; }
-      header h1 { font-size: 1.3rem; }
+      header {
+        padding: 12px 20px;
+      }
+      header h1 {
+        font-size: 1.3rem;
+      }
+      .hero h2 {
+        font-size: 2rem;
+      }
+      .images img {
+        width: 90%;
+        height: 160px;
+      }
+      .features {
+        width: 92%;
+      }
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Attendance Tracker</h1>
-    <a href="attendance.html">Go to main page →</a>
+    <a href="attendance.html">Go to Main Website →</a>
   </header>
 
   <section class="hero">
     <h2>Welcome to Attendance Tracker</h2>
     <p>
-      A smart and simple way to manage your class attendance effortlessly!  
-      Select dates, mark your attendance for each subject, and get real-time attendance summaries.  
-      Built for students who want to stay on top of their attendance goals without the hassle.
+      Stay organized and on track with your attendance!  
+      This simple and efficient tool helps you mark classes, track attendance percentages,  
+      and manage semesters — all in one clean interface.
     </p>
 
     <div class="images">
@@ -161,19 +168,19 @@
     </div>
 
     <div class="features">
-      <h3>✨ Why You'll Love It</h3>
+      <h3>🌟 Why You’ll Love It</h3>
       <ul>
-        <li>📅 Interactive calendar interface for easy tracking</li>
-        <li>📊 Real-time attendance percentage updates</li>
-        <li>🔁 Separate semesters with saved previous data</li>
-        <li>📱 Fully mobile-friendly and smooth animations</li>
-        <li>💡 Designed for students of IIIT Naya Raipur</li>
+        <li>📅 Easy-to-use calendar for tracking classes</li>
+        <li>📊 Real-time attendance summary</li>
+        <li>🔁 Semester-wise data management</li>
+        <li>📱 Mobile-friendly and responsive layout</li>
+        <li>🏫 Built especially for IIIT Naya Raipur students</li>
       </ul>
     </div>
   </section>
 
   <footer>
-    Made with ❤️ by Anuj Singh | Project for IIIT Naya Raipur
+    © 2025 Attendance Tracker | Made with ❤️ by Anuj Singh
   </footer>
 </body>
 </html>
